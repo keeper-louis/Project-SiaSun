@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Keeper_Louis.K3.FIN.Business.PlugIn
 {
-    [Description("费用报销模块检查申请人借款余额")]
+    [Description("费用报销模块检查申请人借款余额,从总账取数")]
     public class ER_CheckBorrowAmount:AbstractBillPlugIn
     {
         public override void DataChanged(Kingdee.BOS.Core.DynamicForm.PlugIn.Args.DataChangedEventArgs e)
