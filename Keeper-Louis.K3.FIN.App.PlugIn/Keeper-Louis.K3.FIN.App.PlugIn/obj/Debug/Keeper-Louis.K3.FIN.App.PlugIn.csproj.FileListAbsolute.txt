@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Keeper-Louis.K3.FIN.App.PlugIn.dll
+C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Keeper-Louis.K3.FIN.App.PlugIn.pdb
+D:\Projects\SiaSun\Keeper-Louis.K3.FIN.App.PlugIn\Keeper-Louis.K3.FIN.App.PlugIn\obj\Debug\Keeper-Louis.K3.FIN.App.PlugIn.dll
+D:\Projects\SiaSun\Keeper-Louis.K3.FIN.App.PlugIn\Keeper-Louis.K3.FIN.App.PlugIn\obj\Debug\Keeper-Louis.K3.FIN.App.PlugIn.pdb
