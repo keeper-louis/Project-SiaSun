@@ -1,6 +1,9 @@
 D:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Keeper-Louis.K3.FIN.Business.PlugIn.dll
 D:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Keeper-Louis.K3.FIN.Business.PlugIn.pdb
-C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Keeper-Louis.K3.FIN.Business.PlugIn.dll
-C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Keeper-Louis.K3.FIN.Business.PlugIn.pdb
 D:\Projects\SiaSun\Keeper-Louis.K3.FIN.Business.PlugIn\Keeper-Louis.K3.FIN.Business.PlugIn\obj\Debug\Keeper-Louis.K3.FIN.Business.PlugIn.dll
 D:\Projects\SiaSun\Keeper-Louis.K3.FIN.Business.PlugIn\Keeper-Louis.K3.FIN.Business.PlugIn\obj\Debug\Keeper-Louis.K3.FIN.Business.PlugIn.pdb
+C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Keeper-Louis.K3.FIN.Business.PlugIn.dll
+C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Keeper-Louis.K3.FIN.Business.PlugIn.pdb
+D:\Projects\GitRepo\Project-SiaSun\Keeper-Louis.K3.FIN.Business.PlugIn\Keeper-Louis.K3.FIN.Business.PlugIn\obj\Debug\Keeper-Louis.K3.FIN.Business.PlugIn.csprojResolveAssemblyReference.cache
+D:\Projects\GitRepo\Project-SiaSun\Keeper-Louis.K3.FIN.Business.PlugIn\Keeper-Louis.K3.FIN.Business.PlugIn\obj\Debug\Keeper-Louis.K3.FIN.Business.PlugIn.dll
+D:\Projects\GitRepo\Project-SiaSun\Keeper-Louis.K3.FIN.Business.PlugIn\Keeper-Louis.K3.FIN.Business.PlugIn\obj\Debug\Keeper-Louis.K3.FIN.Business.PlugIn.pdb
