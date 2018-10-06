@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://service.webservice.mes.lgcx.com/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="MaterialMessageFromCappServiceService" targetNamespace="http://service.webservice.mes.lgcx.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="unqualified" targetNamespace="http://service.webservice.mes.lgcx.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="MaterialMessageFromCapp" type="tns:MaterialMessageFromCapp" />
+      <xs:element name="MaterialMessageFromCappResponse" type="tns:MaterialMessageFromCappResponse" />
+      <xs:element name="MaterialProcessMessageFromCapp" type="tns:MaterialProcessMessageFromCapp" />
+      <xs:element name="MaterialProcessMessageFromCappResponse" type="tns:MaterialProcessMessageFromCappResponse" />
+      <xs:element name="StorageMessageFromKis" type="tns:StorageMessageFromKis" />
+      <xs:element name="StorageMessageFromKisResponse" type="tns:StorageMessageFromKisResponse" />
+      <xs:complexType name="MaterialProcessMessageFromCapp">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="MaterialProcessMessageFromCappResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="MaterialMessageFromCapp">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="process" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="MaterialMessageFromCappResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="StorageMessageFromKis">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="processCheckInfo" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="StorageMessageFromKisResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="MaterialMessageFromCapp">
+    <wsdl:part name="parameters" element="tns:MaterialMessageFromCapp" />
+  </wsdl:message>
+  <wsdl:message name="MaterialMessageFromCappResponse">
+    <wsdl:part name="parameters" element="tns:MaterialMessageFromCappResponse" />
+  </wsdl:message>
+  <wsdl:message name="MaterialProcessMessageFromCapp">
+    <wsdl:part name="parameters" element="tns:MaterialProcessMessageFromCapp" />
+  </wsdl:message>
+  <wsdl:message name="MaterialProcessMessageFromCappResponse">
+    <wsdl:part name="parameters" element="tns:MaterialProcessMessageFromCappResponse" />
+  </wsdl:message>
+  <wsdl:message name="StorageMessageFromKisResponse">
+    <wsdl:part name="parameters" element="tns:StorageMessageFromKisResponse" />
+  </wsdl:message>
+  <wsdl:message name="StorageMessageFromKis">
+    <wsdl:part name="parameters" element="tns:StorageMessageFromKis" />
+  </wsdl:message>
+  <wsdl:portType name="MaterialMessageFromCappService">
+    <wsdl:operation name="MaterialProcessMessageFromCapp">
+      <wsdl:input name="MaterialProcessMessageFromCapp" message="tns:MaterialProcessMessageFromCapp" />
+      <wsdl:output name="MaterialProcessMessageFromCappResponse" message="tns:MaterialProcessMessageFromCappResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="MaterialMessageFromCapp">
+      <wsdl:input name="MaterialMessageFromCapp" message="tns:MaterialMessageFromCapp" />
+      <wsdl:output name="MaterialMessageFromCappResponse" message="tns:MaterialMessageFromCappResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="StorageMessageFromKis">
+      <wsdl:input name="StorageMessageFromKis" message="tns:StorageMessageFromKis" />
+      <wsdl:output name="StorageMessageFromKisResponse" message="tns:StorageMessageFromKisResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MaterialMessageFromCappServiceServiceSoapBinding" type="tns:MaterialMessageFromCappService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="MaterialProcessMessageFromCapp">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="MaterialProcessMessageFromCapp">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MaterialProcessMessageFromCappResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MaterialMessageFromCapp">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="MaterialMessageFromCapp">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MaterialMessageFromCappResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StorageMessageFromKis">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="StorageMessageFromKis">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="StorageMessageFromKisResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MaterialMessageFromCappServiceService">
+    <wsdl:port name="MaterialMessageFromCappServicePort" binding="tns:MaterialMessageFromCappServiceServiceSoapBinding">
+      <soap:address location="http://172.16.10.18:8080/mes-web/webservice/materialMessageFromCappService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

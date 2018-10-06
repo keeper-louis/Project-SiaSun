@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keeper-Louis.K3.MES.WebService", "Keeper-Louis.K3.MES.WebService\Keeper-Louis.K3.MES.WebService.csproj", "{CD534D79-7AE0-45D2-BE9B-4B62FBACACDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{D22C4BFA-5280-42CC-ADDF-3ECD5CF1E3C3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CD534D79-7AE0-45D2-BE9B-4B62FBACACDD} = {CD534D79-7AE0-45D2-BE9B-4B62FBACACDD}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keeper.K3.MES.Entity", "Keeper.K3.MES.Entity\Keeper.K3.MES.Entity.csproj", "{466C9E85-D957-4157-8D80-D7D07F479FA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keeper.K3.MES.Contracts", "Keeper.K3.MES.Contracts\Keeper.K3.MES.Contracts.csproj", "{6DA4CDEF-B983-4EFC-B310-D7AD56A90FEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keeper.K3.MES.App.Core", "Keeper.K3.MES.App.Core\Keeper.K3.MES.App.Core.csproj", "{A1D358CB-8622-4954-938D-D9DDF4070058}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keeper.K3.MES.CloudWebApi.Stub", "Keeper.K3.MES.CloudWebApi.Stub\Keeper.K3.MES.CloudWebApi.Stub.csproj", "{F9159C77-3BD4-4A2E-B454-2A0815B3A755}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keeper_Louis.K3.MES.App.PlugIn", "Keeper_Louis.K3.MES.App.PlugIn\Keeper_Louis.K3.MES.App.PlugIn.csproj", "{D2487968-CCB2-41E0-8440-BABDAD5B625B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD534D79-7AE0-45D2-BE9B-4B62FBACACDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD534D79-7AE0-45D2-BE9B-4B62FBACACDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD534D79-7AE0-45D2-BE9B-4B62FBACACDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD534D79-7AE0-45D2-BE9B-4B62FBACACDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D22C4BFA-5280-42CC-ADDF-3ECD5CF1E3C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D22C4BFA-5280-42CC-ADDF-3ECD5CF1E3C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D22C4BFA-5280-42CC-ADDF-3ECD5CF1E3C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D22C4BFA-5280-42CC-ADDF-3ECD5CF1E3C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{466C9E85-D957-4157-8D80-D7D07F479FA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{466C9E85-D957-4157-8D80-D7D07F479FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{466C9E85-D957-4157-8D80-D7D07F479FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{466C9E85-D957-4157-8D80-D7D07F479FA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DA4CDEF-B983-4EFC-B310-D7AD56A90FEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DA4CDEF-B983-4EFC-B310-D7AD56A90FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DA4CDEF-B983-4EFC-B310-D7AD56A90FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DA4CDEF-B983-4EFC-B310-D7AD56A90FEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1D358CB-8622-4954-938D-D9DDF4070058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D358CB-8622-4954-938D-D9DDF4070058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D358CB-8622-4954-938D-D9DDF4070058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D358CB-8622-4954-938D-D9DDF4070058}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9159C77-3BD4-4A2E-B454-2A0815B3A755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9159C77-3BD4-4A2E-B454-2A0815B3A755}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9159C77-3BD4-4A2E-B454-2A0815B3A755}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9159C77-3BD4-4A2E-B454-2A0815B3A755}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2487968-CCB2-41E0-8440-BABDAD5B625B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2487968-CCB2-41E0-8440-BABDAD5B625B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2487968-CCB2-41E0-8440-BABDAD5B625B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2487968-CCB2-41E0-8440-BABDAD5B625B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

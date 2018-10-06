@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Keeper.K3.MES.CloudWebApi.Stub.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Keeper_K3_MES_CloudWebApi_Stub_WebReference_MESWebService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://127.0.0.1:8099/MESWebService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
