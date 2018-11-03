@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Keeper.Siasun.Mes.Project.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Keeper_Siasun_Mes_Project_WebMesTest_MaterialMessageFromCappServiceService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.16.10.22:8080/mes-web/webservice/materialMessageFromCappService</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
