@@ -9,6 +9,7 @@ using Kingdee.BOS.Core.DynamicForm.PlugIn.Args;
 using Kingdee.BOS.Orm.DataEntity;
 using Kingdee.BOS.App.Data;
 using System.Data;
+using Kingdee.BOS.Log;
 
 namespace Keeper_Louis.K3.FIN.App.PlugIn
 {
@@ -28,7 +29,7 @@ namespace Keeper_Louis.K3.FIN.App.PlugIn
                 {
                     long biiID = Convert.ToInt64(item["Id"]);
                     DynamicObjectCollection entityCollection = item["HS_AdjustmentBillEntry"] as DynamicObjectCollection;
-                    if (Convert.ToString(item["BillTYpe"]).Equals("4d20243e32b14834aae8a96525354bcd"))//入库成本调整单
+                    if (Convert.ToString(item["BillTYpe_Id"]).Equals("4d20243e32b14834aae8a96525354bcd"))//入库成本调整单
                     {
                         foreach (DynamicObject entity in entityCollection)
                         {
@@ -56,20 +57,21 @@ namespace Keeper_Louis.K3.FIN.App.PlugIn
                             }
                         }
                     }
-                    if (Convert.ToString(item["BillTYpe"]).Equals("d040f688e69b406186aecfb5d9a86101"))//出库成本调整单
-                    {
-                        foreach (DynamicObject entity in entityCollection)
-                        {
-                            string billNo = Convert.ToString(entity["SrcBillNo"]);
-                            string strSql = string.Format(@"/*dialect*/select distinct a.FProjectBillNo from T_HS_AdjustmentBillEntry a inner join T_HS_AdjustmentBill b on a.FID = b.FID where b.FBILLNO = '{0}'", billNo);
-                            long xmxxID = DBUtils.ExecuteScalar<long>(this.Context, strSql, -1, null);
-                            if (xmxxID != -1)
-                            {
-                                string updateSql = string.Format(@"update T_HS_AdjustmentBillEntry set FProjectBillNo = {0} where FSRCBILLNO = '{1}' and fid = {2}", xmxxID, billNo, biiID);
-                                DBUtils.Execute(this.Context, updateSql);
-                            }
-                        }
-                    }
+                    //if (Convert.ToString(item["BillTYpe_Id"]).Equals("d040f688e69b406186aecfb5d9a86101"))//出库成本调整单
+                    //{
+                    //    foreach (DynamicObject entity in entityCollection)
+                    //    {
+                    //        string billNo = Convert.ToString(entity["SrcBillNo"]);
+                            
+                    //        string strSql = string.Format(@"/*dialect*/select distinct a.FProjectBillNo from T_HS_AdjustmentBillEntry a inner join T_HS_AdjustmentBill b on a.FID = b.FID where b.FBILLNO = '{0}'", billNo);
+                    //        long xmxxID = DBUtils.ExecuteScalar<long>(this.Context, strSql, -1, null);
+                    //        if (xmxxID != -1)
+                    //        {
+                    //            string updateSql = string.Format(@"update T_HS_AdjustmentBillEntry set FProjectBillNo = {0} where FSRCBILLNO = '{1}' and fid = {2}", xmxxID, billNo, biiID);
+                    //            DBUtils.Execute(this.Context, updateSql);
+                    //        }
+                    //    }
+                    //}
                     
                 }
             }

@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="ContactBetweenUnit.cs" />
     <Compile Include="CostAdjustmentBillExtend.cs" />
+    <Compile Include="CostUpdateScheduleService.cs" />
     <Compile Include="MaterialSaveImpactCost.cs" />
     <Compile Include="PaymentReqBill.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
