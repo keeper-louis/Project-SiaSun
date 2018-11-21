@@ -18,7 +18,7 @@ namespace Keeper_Louis.K3.FIN.App.PlugIn
         public void Run(Context ctx, Schedule schedule)
         {
             //项目号为null，单据类型为出库成本核算单，查询出来distinct源单据号、FID
-            string strSql = string.Format(@"/*dialect*/select distinct X.FSRCBILLNO,Z.FID FROM T_HS_AdjustmentBill Z INNER JOIN T_HS_AdjustmentBillEntry X ON Z.FID = X.FID AND Z.FBILLTYPEID = 'd040f688e69b406186aecfb5d9a86101'  AND X.FProjectBillNo = ' ' AND X.FSRCBILLNO <> ' ' AND X.FPROJECTBILLNO <> 0");
+            string strSql = string.Format(@"/*dialect*/select distinct X.FSRCBILLNO,Z.FID,Z.FBILLNO,X.FPROJECTBILLNO FROM T_HS_AdjustmentBill Z INNER JOIN T_HS_AdjustmentBillEntry X ON Z.FID = X.FID AND Z.FBILLTYPEID = 'd040f688e69b406186aecfb5d9a86101'  AND X.FProjectBillNo = 0 AND X.FSRCBILLNO <> ' ' AND Z.FMODIFYDATE> CONVERT(datetime,'11/16/2018',101)");
             //循环结果集，根据来源单据号查询项目号
             using (IDataReader reader = DBUtils.ExecuteReader(ctx,strSql))
             {

@@ -5,5 +5,6 @@ D:\Projects\GitRepo\Project-SiaSun\Keeper-Louis.K3.FIN.App.PlugIn\Keeper-Louis.K
 D:\Projects\GitRepo\Project-SiaSun\Keeper-Louis.K3.FIN.App.PlugIn\Keeper-Louis.K3.FIN.App.PlugIn\obj\Debug\Keeper-Louis.K3.FIN.App.PlugIn.pdb
 C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Keeper-Louis.K3.FIN.App.PlugIn.dll
 C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Keeper-Louis.K3.FIN.App.PlugIn.pdb
+C:\Projects\Keeper-Louis.K3.FIN.App.PlugIn\Keeper-Louis.K3.FIN.App.PlugIn\obj\Debug\Keeper-Louis.K3.FIN.App.PlugIn.csprojResolveAssemblyReference.cache
 C:\Projects\Keeper-Louis.K3.FIN.App.PlugIn\Keeper-Louis.K3.FIN.App.PlugIn\obj\Debug\Keeper-Louis.K3.FIN.App.PlugIn.dll
 C:\Projects\Keeper-Louis.K3.FIN.App.PlugIn\Keeper-Louis.K3.FIN.App.PlugIn\obj\Debug\Keeper-Louis.K3.FIN.App.PlugIn.pdb

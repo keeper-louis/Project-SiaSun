@@ -25,8 +25,8 @@ namespace Keeper_Louis.K3.FIN.App.PlugIn
                     {
                         foreach (DynamicObject PayEntity in PAYAPPLYENTRY)
                         {
-                            long entryID = Convert.ToInt64(PayEntity["EntryID"]);
-                            if (Convert.ToString(PayEntity["F_PBZS_POONO"]) != null && !Convert.ToString(PayEntity[""]).Equals(" "))//采购订单号不等null并且不等于空字符串
+                            long entryID = Convert.ToInt64(PayEntity["Id"]);
+                            if (Convert.ToString(PayEntity["F_PBZS_POONO"]) != null && !Convert.ToString(PayEntity["F_PBZS_POONO"]).Equals(" "))//采购订单号不等null并且不等于空字符串
                             {
                                 Double apAmount = CalApAmount(Convert.ToString(PayEntity["F_PBZS_POONO"]));
                                 Double invoiceAmount = CalInvoiceAmount(Convert.ToString(PayEntity["F_PBZS_POONO"]));
