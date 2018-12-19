@@ -69,9 +69,11 @@
     <Compile Include="CostAdjustmentBillExtend.cs" />
     <Compile Include="CostUpdateScheduleService.cs" />
     <Compile Include="MaterialSaveImpactCost.cs" />
+    <Compile Include="PayBillSubmitBank.cs" />
     <Compile Include="PaymentReqBill.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PurInStkUnchkPlugin.cs" />
+    <Compile Include="Validator\PaybillSubmitBankValidator.cs" />
     <Compile Include="YCT_Helper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
